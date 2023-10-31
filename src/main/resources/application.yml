@@ -17,51 +17,129 @@ spring:
    rule: 
      #远程规则 
      remote: 
- #      - 'https://file-cn.trli.club:2083/ad-hosts/ad-hosts-sqlist/ad-adguardhome-dnstype.txt' #冷莫 
-       - 'https://www.gitlink.org.cn/api/damengzhu/abpmerge/raw?filepath=abpmerge.txt' #大萌主 的规则 
- #      - 'https://www.gitlink.org.cn/api/zzp282/ads/raw?filepath=ADSLJ.txt' #我号被永久封了啊 的两个规则 
- #      - 'https://www.gitlink.org.cn/api/zzp282/ads/raw?filepath=ADSLJF.txt'  
- #      - 'https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/multi.txt' #hagezi 
-       - 'https://github.com/VeleSila/yhosts/raw/master/hosts' #yhosts    
-       - 'https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt' #AdBlock DNS Filters    
-       - 'https://raw.githubusercontent.com/pboymt/Steam520/main/hosts' #Steam加速 
-       - 'https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard' #Ad-set-hosts 
-       - 'https://raw.gitmirror.com/lingeringsound/10007_auto/master/all' #1007 
-       - 'https://lingeringsound.github.io/adblock_auto/Rules/adblock_auto_lite.txt' #夕阳醉歌 
-       - 'https://raw.fgit.ml/lingeringsound/adblock/master/Toutiao_block.txt' #头条 
-       - 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt' #adblock_plus 
-       - 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt' #adblock_privacy 
-       - 'https://file-git.trli.club/Domains/AccelerateHosts/github-hosts.txt' #冷莫-GitHub 
-       - 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt' #乘风 
-       - 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt' #乘风-视频 
-       - 'https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt' #ADgk(banbendalao) 
-       - 'https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt' #kill-baidu-ad(banbendalao) 
-       - 'https://raw.githubusercontent.com/jianboy/github-host/master/hosts' #GitHub 
-       - 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt' #几十KB的轻量规则 
-       - 'https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt' #知乎 
-       - 'https://small.oisd.nl/' #oisd 
-       - 'https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt' #QuarkList 
-       - 'https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker' #neodevhost 
-       - 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt' #AdRules 
-       - 'https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts' #ineo6-github 
-       - 'https://raw.hellogithub.com/hosts' #GitHub520 
-       - 'https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt' #NoAppDownload 
- #      - 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt'  #adblock-nocoin-list 
- #      - 'https://github.com/durablenapkin/scamblocklist/blob/master/adguard.txt' #Scam Blocklist 
- #      - 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List 
- #      - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt' #AdGuard DNS filter 
- #      - 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' #Peter Lowe's List 
- #      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt' #OISD Blocklist Full 
- #      - 'https://adaway.org/hosts.txt' #AdAway Default Blocklist 
- #      - 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker 
-       - 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化 
- #      - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #adguard base 
-       - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt' #AWAvenue-Adblock-Rule 
- #      - 'https://github.com/reek/anti-adblock-killer/blob/master/anti-adblock-killer-filters.txt' #anti-adblock-killer 
-       - 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt' #halflife-list 
- #      - 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt' 
- #      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_32.txt' #The NoTracking blocklist for AdGuard Home 
- #      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt' #Steven Black's List for AdGuard Home 
+  #远程规则
+remote:
+#Oisd Big
+# #  - 'https://big.oisd.nl/'
+#Oisd Small
+- 'https://small.oisd.nl'
+#Oisd Nfsw
+# #  - 'https://nsfw.oisd.nl/'
+#anti-AD
+# #  - 'https://anti-ad.net/easylist.txt'
+#ADgk
+# #  - 'https://cdn.jsdelivr.net/gh/banbendalao/ADgk@master/ADgk.txt'
+#10007
+- 'https://raw.gitmirror.com/lingeringsound/10007/main/adb.txt'
+#秋风
+# #  - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt'
+#Adaway
+- 'https://adaway.org/hosts.txt'
+#qq5460168-black
+#    - 'https://jihulab.com/qq5460168/5460/-/raw/master/black.txt'
+#qq5460168-white
+# # - 'https://jihulab.com/qq5460168/5460/-/raw/master/white.txt'
+#xlxbk-black
+- 'https://www.xlxbk.cn/dns.txt'
+#xlxbk-white
+- 'https://www.xlxbk.cn/allow.txt'
+#Cats-Team
+- 'https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt'
+#Steam520
+#    - 'https://cdn.jsdelivr.net/gh/pboymt/Steam520/hosts'
+#Gfw
+#    - 'https://github.com/Potterli20/file/releases/download/github-hosts/gfw-Hosts.txt'
+#Accelerete -Hosts
+#    - 'https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt'
+#hellogithub
+#    - 'https://raw.hellogithub.com/hosts'
+#Ad-set-hosts
+#    - 'https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard'
+#    - 'https://example.org/rule.txt'
+
+- 'https://adguard.com/kb/zh-CN/general/ad-filtering/adguard-filters/' #AdGuard防跟踪保护过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt' #AdGuard解除搜索广告和自我推销过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt' #AdGuard移动广告过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt' #AdGuard 恼人广告过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt' #AdGuard URL跟踪过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt' #AdGuard中文过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #AdGuard基础过滤器
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt' # AdGuard社交媒体过滤器
+- 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker
+- 'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts' #大圣净化
+- 'https://raw.githubusercontent.com/sbwml/halflife-list/master/ad-pc.txt' #halflife-list
+- 'https://cdn.jsdelivr.net/gh/hoshsadiq/adblock-nocoin-list/hosts.txt'  #adblock-nocoin-list
+- 'https://cdn.jsdelivr.net/gh/durablenapkin/scamblocklist/adguard.txt' #Scam Blocklist
+- 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
+- 'https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry/filters/filter_15_DnsFilter/filter.txt' #AdGuard DNS filter
+- 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&amp;showintro=1&amp;mimetype=plaintext' #Peter Lowe's List
+- 'https://abp.oisd.nl/basic/' #OISD Blocklist Basic
+- 'https://cdn.jsdelivr.net/gh/crazy-max/WindowsSpyBlocker/data/hosts/spy.txt' #WindowsSpyBlocker
+- 'https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad-pc.txt' #HalfLife（pc）
+- 'https://cdn.jsdelivr.net/gh/VeleSila/yhosts/hosts.txt' #yhosts
+#- 'https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.list' #Domains classified as tracking or advertising
+- 'https://code.gitlink.org.cn/hacamer/AdRules/raw/branch/main/adguard-full.txt' #AdRules AdGuard Full List
+- 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #adguard base
+#添加的自用地址
+- 'https://easylist-downloads.adblockplus.org/easyprivacy.txt' #rasylist
+- 'https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt'
+- 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt'
+- 'https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt'
+- 'https://raw.githubusercontent.com/vokins/yhosts/master/data/tvbox.txt'
+- 'https://www.malwaredomainlist.com/hostslist/hosts.txt'
+- 'https://easylist-downloads.adblockplus.org/easylist.txt'
+- 'https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt'
+- 'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt'
+# 来自shadowrocket的地址
+- 'https://easylist-downloads.adblockplus.org/easylistchina.txt'
+# - 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt'
+# 乘风 过滤规则
+- 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
+# Peter Lowe 广告和隐私跟踪域名
+- 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;showintro=0'
+#      - 'https://file-cn.trli.club:2083/ad-hosts/ad-hosts-sqlist/ad-adguardhome-dnstype.txt' #冷莫
+- 'https://www.gitlink.org.cn/api/damengzhu/abpmerge/raw?filepath=abpmerge.txt' #大萌主 的规则
+#      - 'https://www.gitlink.org.cn/api/zzp282/ads/raw?filepath=ADSLJ.txt' #我号被永久封了啊 的两个规则
+#      - 'https://www.gitlink.org.cn/api/zzp282/ads/raw?filepath=ADSLJF.txt'
+#      - 'https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/multi.txt' #hagezi
+- 'https://github.com/VeleSila/yhosts/raw/master/hosts' #yhosts
+- 'https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt' #AdBlock DNS Filters
+- 'https://raw.githubusercontent.com/pboymt/Steam520/main/hosts' #Steam加速
+- 'https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard' #Ad-set-hosts
+- 'https://raw.gitmirror.com/lingeringsound/10007_auto/master/all' #1007
+- 'https://lingeringsound.github.io/adblock_auto/Rules/adblock_auto_lite.txt' #夕阳醉歌
+- 'https://raw.fgit.ml/lingeringsound/adblock/master/Toutiao_block.txt' #头条
+- 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt' #adblock_plus
+- 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt' #adblock_privacy
+- 'https://file-git.trli.club/Domains/AccelerateHosts/github-hosts.txt' #冷莫-GitHub
+- 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt' #乘风
+- 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt' #乘风-视频
+- 'https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt' #ADgk(banbendalao)
+- 'https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt' #kill-baidu-ad(banbendalao)
+- 'https://raw.githubusercontent.com/jianboy/github-host/master/hosts' #GitHub
+- 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt' #几十KB的轻量规则
+- 'https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt' #知乎
+- 'https://small.oisd.nl/' #oisd
+- 'https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt' #QuarkList
+- 'https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker' #neodevhost
+- 'https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt' #AdRules
+- 'https://gitlab.com/ineo6/hosts/-/raw/master/next-hosts' #ineo6-github
+- 'https://raw.hellogithub.com/hosts' #GitHub520
+- 'https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt' #NoAppDownload
+#      - 'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt'  #adblock-nocoin-list
+#      - 'https://github.com/durablenapkin/scamblocklist/blob/master/adguard.txt' #Scam Blocklist
+#      - 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
+#      - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt' #AdGuard DNS filter
+#      - 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&amp;showintro=1&amp;mimetype=plaintext' #Peter Lowe's List
+#      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt' #OISD Blocklist Full
+#
+#      - 'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt' #WindowsSpyBlocker
+#      - 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt' #adguard base
+#      - 'https://github.com/reek/anti-adblock-killer/blob/master/anti-adblock-killer-filters.txt' #anti-adblock-killer
+- 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt' #halflife-list
+#      - 'https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt'
+#      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_32.txt' #The NoTracking blocklist for AdGuard Home
+#      - 'https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt' #Steven Black's List for AdGuard Home
      #本地规则 
      local: #本地规则请将文件移动到项目路径rule目录中 
        - 'mylist.txt' 
